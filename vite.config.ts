@@ -6,5 +6,9 @@ export default defineConfig({
 	plugins: [UnoCSS(), sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
-	}
+	},
+	server: {
+		port: 8080, // Change this to the port you want
+	  },
 });
+
